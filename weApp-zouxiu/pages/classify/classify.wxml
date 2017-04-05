@@ -1,0 +1,23 @@
+<!--pages/classify/classify.wxml-->
+<image class="loading" src="../../images/loading.gif"></image>
+<view class="container">
+    <scroll-view class="classList" scroll-x="true">
+        <view class="wrap">
+            <view wx:for="{{classList}}" class="scroll-view-item">{{item.className}}</view>
+        </view>
+    </scroll-view>  
+    <view class="goodsList">
+        <view wx:for="{{goodsList}}" data-info="{{item.goodsID}}" class="goods-item" bindtap="toDetail">
+            <view class="goodsImg">
+                <image src="{{item.goodsListImg}}"></image>
+            </view> 
+            <view class="goodsName">
+                <text>{{item.goodsName}}</text>
+            </view>
+            <view class="price">
+                <text>¥{{item.nowPrice}}</text>
+                <text>¥{{item.price}}</text>
+            </view>
+        </view>
+    </view>
+</view>

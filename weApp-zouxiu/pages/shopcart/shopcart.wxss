@@ -1,0 +1,75 @@
+/* pages/shopcart/shopcart.wxss */
+.shopcart{
+    width:100%;
+    min-height:100%;
+    background:rgb(247, 247, 247);
+}
+.shopcart .balance{
+    width:100%;
+    height:100rpx;
+    background:rgb(116, 116, 116);
+    display:-webkit-flex;
+    line-height:100rpx;
+    color:white;
+}
+.shopcart .balance .totalGoodsNum{
+    margin-right:30rpx;
+}
+.shopcart .cartItem{
+    width:100%;
+    -webkit-box-sizing:border-box;
+    padding:38rpx;
+    border-bottom:1rpx solid rgb(203, 203, 203);
+    display:-webkit-flex;
+}
+.shopcart .cartItem image{
+    width:190rpx;
+    height:190rpx;
+}
+.shopcart .cartItem .cartInfo{
+    -webkit-flex-grow:1;
+    width:0;
+    margin-left:20rpx;
+}
+.shopcart .cartItem .cartInfo .goodsName{
+    display:-webkit-flex;
+    -webkit-justify-content:space-between;
+}
+.shopcart .cartItem .cartInfo .goodsName .title{
+    width:350rpx;
+    overflow:hidden;
+    display:inline-block;
+    white-space: nowrap;
+}
+.shopcart .cartItem .cartInfo .goodsName .delBtn{
+    width:44rpx;
+    display:inline-block;
+    height:44rpx;
+    background:url(../../images/del.png) no-repeat center center;
+    background-size:80%;
+}
+
+.shopcart .cartItem .cartInfo .price text{
+    color:red;
+}
+.shopcart .cartItem .cartInfo .goodsNum{
+    display:-webkit-flex;
+    line-height:52.5rpx;
+}
+.shopcart .cartItem .cartInfo .goodsNum text{
+    width:80rpx;
+    height:52.5rpx;
+    background:linear-gradient(to bottom,rgb(173, 173, 173),rgb(77, 77, 77));
+    color:white;
+    text-align:center;
+    line-height:52.5rpx;
+    border-radius:8rpx;
+}
+.shopcart .cartItem .cartInfo .goodsNum input{
+    width:90rpx;
+    height:40rpx;
+    -webkit-box-shadow:inset 1px 1px 4px 0px rgb(190,190,190);
+    margin:0 10rpx;
+    border-radius:8rpx;
+    text-align:center;
+}

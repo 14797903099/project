@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <view class="loginBox">
+        <input placeholder="请输入账户" bindinput="userChange"/>
+        <text wx:if="{{tipUser}}">用户名不存在</text>
+        <input type="password" placeholder="请输入密码" bindinput="pwdChange"/>
+        <text wx:if="{{tipPwd}}">密码错误</text>
+    </view>
+    <view class="remember">
+        <view class="showPwd">
+            <label class="checkbox">
+                <checkbox/>显示密码
+            </label>
+            <navigator url="">忘记密码？</navigator> 
+        </view>
+        <label class="remLogin">
+            <checkbox checked="true"/>记住密码自动登录
+        </label>
+    </view>
+
+    <view class="btnBox">
+        <button class="login" bindtap="loginCheck">登  录</button>
+        <button class="register" bindtap="toReg">注  册</button>
+    </view>
+</view>

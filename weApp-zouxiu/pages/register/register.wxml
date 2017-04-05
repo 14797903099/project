@@ -1,0 +1,12 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+    <view class="registerBox">
+        <input placeholder="请输入账户" bindinput="userChange"/>
+        <text wx:if="{{tipUser}}">用户名重名</text>
+        <input type="password" placeholder="请输入密码" bindinput="pwdChange"/>
+        <input type="password" placeholder="请输入密码" bindinput="repPwdChange"/>
+        <text wx:if="{{tipRepPwd}}">请保持两次密码一致</text>
+        <text wx:if="{{tipDataBase}}">数据库报错</text>
+    </view>
+    <button class="register" bindtap="registerCheck">确定注册</button>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/shopcart/shopcart.wxml-->
+<view class="shopcart">
+    <view class="balance">
+        <view class="totalGoodsNum">商品数量:{{totalGoodsNum}}</view>
+        <view class="total">应付总额(不含运费):{{total}}</view>
+    </view>
+    <view class="cartList">
+        <view class="cartItem" wx:for="{{cartList}}">
+            <image src="{{item.goodsListImg}}" mode="scaleToFill"></image>
+            <view class="cartInfo">
+                <view class="goodsName">
+                    <text class="title">{{item.goodsName}}</text>
+                    <text class="delBtn" bindtap="del" data-id="{{item.goodsID}}"></text>
+                </view>
+                <view class="goodsType">{{item.className}}</view>
+                <view class="price">单价:<text>¥{{item.nowPrice}}</text></view>
+                <view class="goodsNum">
+                    数量:
+                    <text bindtap="changeNum" data-type="-" data-id="{{item.goodsID}}" data-num="{{item.number}}">-</text>
+                    <input type="number" value="{{item.number}}"/>
+                    <text bindtap="changeNum" data-type="+" data-id="{{item.goodsID}}" data-num="{{item.number}}">+</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

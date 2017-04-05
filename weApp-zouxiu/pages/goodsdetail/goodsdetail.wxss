@@ -1,0 +1,83 @@
+/* pages/goodsdetail/goodsdetail.wxss */
+.container{
+    width:100%;
+    background:#f3eff0;
+    padding-bottom:234rpx;
+}
+.container swiper{
+    width:100%;
+    height:320rpx;
+}
+.container swiper image{
+    width:100%;
+    height:100%;
+}
+.container .detail{
+    padding:50rpx;
+    -webkit-box-sizing:border-box;
+    width:100%;
+}
+.container .detail .goodsNum{
+    width:100%;
+    display:-webkit-flex;
+}
+.container .detail .goodsNum text{
+    width:40rpx;
+    height:40rpx;
+    background:white;
+    text-align:center;
+    line-height:40rpx;
+    border-radius:3px;
+    border:1px solid #ccc;
+}
+.container .detail .goodsNum input{
+    width:70rpx;
+    height:30rpx;
+    background:white;
+    margin:0 20rpx;
+    padding:0;
+    font-size:28rpx;
+}
+.container .detail .priceBox{
+    margin-top:30rpx;
+    margin-bottom:30rpx;
+}
+.container .detail .priceBox text:nth-of-type(1){
+    margin-right:2em;
+    color:#bd1a5d;
+}
+.container .detail .priceBox text:nth-of-type(2){
+    text-decoration:line-through;
+}
+.container .goodsDetail{
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:234rpx;
+    width:100%;
+}
+.container .goodsDetail .toGoodsDetailDeep{
+    height:117rpx;
+    line-height:117rpx;
+    padding-left:90rpx;
+    -webkit-box-sizing:border-box;
+    background:white;
+    width:100%;  
+    background:url(../../images/info.png) no-repeat 30rpx center,url(../../images/arrow-right.png) no-repeat 690rpx center;
+    background-size:30rpx,15rpx;
+    background-color:white;
+}
+.container .goodsDetail .addCartBox{
+    height:117rpx;
+    background:rgb(163, 163, 163);
+    width:100%;
+    overflow:hidden;
+}
+.container .goodsDetail .addCartBox button{
+    background:linear-gradient(to bottom,rgb(194, 40, 38),rgb(146, 3, 0));
+    height:99rpx;
+    margin-top:9rpx;
+    width:70%;
+    color:white;
+    line-height:99rpx;
+}

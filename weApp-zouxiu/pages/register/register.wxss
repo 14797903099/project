@@ -1,0 +1,21 @@
+/* pages/register/register.wxss */
+.container{
+    width:100%;
+    height:100%;
+    background:rgb(243,239,240);
+}
+.registerBox input{
+    width:600rpx;
+    background:white;
+    margin:20rpx;
+    height:90rpx;
+    border-radius:10rpx;
+    -webkit-box-sizing:border-box;
+    padding-left:1em;
+}
+.register{
+    width:600rpx;
+    margin-top:200rpx;
+    background:linear-gradient(to bottom,rgb(217, 9, 9),rgb(185, 49, 49));
+    color:white;   
+}
